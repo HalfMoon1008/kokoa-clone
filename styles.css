@@ -1,0 +1,7 @@
+/*
+    CSS는 cascading style sheets   cascading이기 때문에 위에서 아래로 코드를 읽는다. 
+*/
+
+body {
+  background-color: red;
+}
