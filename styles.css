@@ -2,6 +2,7 @@
     CSS는 cascading style sheets   cascading이기 때문에 위에서 아래로 코드를 읽는다. 
 */
 
+/* challenges 2
 body {
   background: tomato;
   height: 100vh;
@@ -33,4 +34,70 @@ body {
 .inside-second {
   width: 100%;
   border-style: dashed;
+}
+*/
+
+/* challenges 3 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: seashell;
+  font-style: italic;
+  height: 200vh;
+}
+
+.father,
+.father2 {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-evenly;
+  border: none;
+  width: 450px;
+}
+
+.father2 {
+  position: relative;
+  bottom: -30px;
+}
+.father > div:nth-child(1) {
+  background-color: tomato;
+}
+
+.father > div:nth-child(2) {
+  background-color: Teal;
+}
+
+.father2 > div:nth-child(1) {
+  background-color: Burlywood;
+}
+
+.father2 > div:nth-child(2) {
+  background-color: thistle;
+}
+
+.inside {
+  height: 50px;
+  width: 98%;
+  background-color: white;
+  position: relative;
+  bottom: -10px;
+  right: 5px;
+}
+
+h3 {
+  position: relative;
+  top: -10px;
+}
+
+span {
+  position: relative;
+  top: -30px;
+  font-size: 10px;
+}
+
+div {
+  height: 280px;
+  width: 200px;
+  border: solid white 5px;
 }
