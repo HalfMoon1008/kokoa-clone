@@ -37,7 +37,7 @@ body {
 }
 */
 
-/* challenges 3 */
+/* challenges 3 
 body {
   display: flex;
   flex-direction: column;
@@ -100,4 +100,89 @@ div {
   height: 280px;
   width: 200px;
   border: solid white 5px;
+}
+
+*/
+
+/* challenges 4 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+@keyframes firstone {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  49% {
+    transform: rotate(180deg);
+  }
+  51% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: 10px;
+  animation: firstone 2s ease-in-out infinite;
+  white-space: pre-wrap;
+  transform-origin: center;
+}
+
+div {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-evenly;
+  width: 20vh;
+}
+
+@keyframes bottom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+div > div {
+  height: 14px;
+  width: 4px;
+  background-color: black;
+  position: relative;
+  bottom: -30px;
+  animation: bottom 2s linear infinite;
+}
+
+#a {
+  animation-delay: 0.1s;
+}
+#b {
+  animation-delay: 0.2s;
+}
+#c {
+  animation-delay: 0.3s;
+}
+#d {
+  animation-delay: 0.4s;
+}
+#e {
+  animation-delay: 0.5s;
 }
